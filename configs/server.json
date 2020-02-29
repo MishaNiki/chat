@@ -1,0 +1,6 @@
+{
+    "bind_port": ":8089",
+    "log_level": "debug",
+
+    "templates-root" : "templates/main.html" 
+}

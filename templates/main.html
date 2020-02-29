@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/fonts.css">
+
+	<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/scripts/main.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			resizeWindow()
+			$(window).bind("resize", resizeWindow);
+			function resizeWindow(e){
+				//var newWindowWidth = $(window).width();
+				// if(newWindowWidth < 800){
+				// 	$("link[rel=stylesheet]").attr({href : "/static/css/mobile.css"});
+				// } else if(newWindowWidth >= 800){
+				// 	$("link[rel=stylesheet]").attr({href : "/static/css/main.css"});
+				// }
+				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+					$("link[rel=stylesheet]").attr({href : "/static/css/mobile.css"});
+				} else {
+					$("link[rel=stylesheet]").attr({href : "/static/css/main.css"});
+				} 
+			}
+		}); // переписать !!!
+</script>
+</head>
+<body>
+	<div class="chat">
+		<div class="title-box">
+			<input type="text" name="auth" placeholder="Author..." class="auth">
+		</div>
+		
+		<div class="message-box">
+			<div class="messages-content"></div>
+		</div>
+
+		<div class="input-box">
+			<textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+			<button type="submit" class="message-submit">Send</button>
+		</div>
+	</div>
+</body>
+</html>

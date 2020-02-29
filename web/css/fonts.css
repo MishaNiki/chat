@@ -1,0 +1,13 @@
+@font-face{
+	font-family: 'Hack';
+	src: url('/static/fonts/hack/Hack-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Hack';
+	src: url('/static/fonts/hack/Hack-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

@@ -1,0 +1,182 @@
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+body {
+	background-image: url('/static/img/b5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.title-box {
+	width: 100%;
+	height: 14rem;
+	color: #000000;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+.auth {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	font-family: 'Hack';
+	font-weight: bold;
+	font-size: 3.4rem;
+	color: #FFF;
+	background: black;
+	border: none;
+	outline: none!important;
+	resize: none;
+	margin: 0px;
+	padding: 15px 40px 10px 40px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+/*------------------
+	MESSAGE BOX	
+-------------------*/
+
+.message-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 3.6rem;
+}
+
+.messages-content {
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+
+.message-cutor, .message-personal {
+	clear: both;
+	position: relative;
+	padding: 6px 10px 7px;
+	margin: 1.35rem 0rem;
+	color: #000;
+	font-family: 'Hack';
+	font-weight: normal;
+	text-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, .2);
+}
+
+.message-cutor {
+	float: left;
+	margin-left: 1.1rem;
+	text-align: left;
+	background: #F4ED7B;
+	border-radius: 10px 10px 10px 0px;
+}
+.message-cutor:before {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	right: auto;
+	border-right: none;
+	border-right: 1.5rem solid transparent;
+	border-top: 1.1rem solid #F4ED7B;
+	bottom: -1rem; 
+}
+
+.message-personal {
+	float: right;
+	margin-right: 1rem;
+	margin-left: 1em;
+	text-align: left;
+	background: #35BF5C;
+	border-radius: 10px 10px 0px 10px;	
+}
+.message-personal:after {
+	content: ' ';
+	position: absolute;
+	left: auto;
+	right: 0;
+	border-right: none;
+	border-left: 1.5rem solid transparent;
+	border-top: 1.1rem solid #35BF5C;
+	bottom: -1rem; 
+}
+
+.message-personal-auth {
+	text-align: left;
+	margin: 0rem;
+	font-weight: bold;
+
+}
+
+/*------------------
+	INPUT BOX
+-------------------*/
+.input-box {
+	width: 100%;
+	height: 18rem;
+	margin: 0px;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+}
+
+.message-input:focus:-webkit-placeholder{
+	color: transparent;
+}
+
+.message-input {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	font-family: 'Hack';
+	font-weight: normal;
+	font-size: 3.3rem;
+	color: #FFF;
+	background: none;
+	border: none;
+	outline: none!important;
+	resize: none;
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+	width: 73%;
+}
+
+.message-submit {
+	position: relative;
+	right: 0;
+	border: none;
+	background: #FFC22A;
+	color: #000;
+	font-size: 3.3rem;
+	border-radius: 15%;
+	text-transform: uppercase;
+	padding: 1.5rem 1.5rem;
+	cursor: pointer;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+button::-moz-focus-inner 
+{
+  border: 0;
+}
+.message-submit:active {
+	background: #FFF;
+}
